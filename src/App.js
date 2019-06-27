@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Map from './Map.js';
+import Toggler from './Toggler.js';
 
 class App extends Component {
 
@@ -16,6 +17,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+          <Toggler app={this} />
           <Map app={this} />
       </div>
     );
